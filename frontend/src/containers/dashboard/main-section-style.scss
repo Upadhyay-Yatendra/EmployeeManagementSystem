@@ -1,0 +1,33 @@
+// Container styles for the charts
+.chart-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 80%;
+  margin: 50px auto; // Center the container horizontally
+  // Media query for smaller screens
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center; // Center items in column layout
+  }
+}
+
+// Individual chart styles
+.chart-item {
+  width: 48%; // Adjust as needed to leave space between the charts
+  margin-bottom: 20px; // Add spacing between the charts
+
+  // 3D appearance
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+}
+.visualisations-heading {
+  text-align: center; /* Center-align the heading */
+  margin: 30px auto; /* Add spacing below the heading */
+  font-weight: bold; /* Set the heading to bold */
+  font-size: 2rem; /* Adjust the font size */
+  color: var(--blue); /* Change the text color */
+}

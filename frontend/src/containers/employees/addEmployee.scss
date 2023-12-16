@@ -1,0 +1,11 @@
+.btn-container{
+    display: flex;
+    justify-content: center;
+    margin:20px auto;
+}
+button{
+    padding: 10px;
+    border-radius: 5px;
+    color:var(--white);
+    background: #1f3466;
+}
