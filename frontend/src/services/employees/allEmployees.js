@@ -2,7 +2,7 @@ import { fetchUrl } from "../../utils/fetchUrl";
 import { getLocalStorageKey } from "../../utils/localStorage";
 
 export const getAllEmployees = async ()=>{
-    const url = 'http://localhost:5000' + '/api/v1/employees/allEmployees';
+    const url = 'https://employeemanagementsystem-dg3q.onrender.com' + '/api/v1/employees/allEmployees';
     const token = getLocalStorageKey('token');
     
     const headers = new Headers();
@@ -15,7 +15,7 @@ export const getAllEmployees = async ()=>{
 }
 
 export const getEmployeesCount = async ()=>{
-     const url = 'http://localhost:5000/api/v1/employees/employees-count'; 
+     const url = 'https://employeemanagementsystem-dg3q.onrender.com/api/v1/employees/employees-count'; 
 
     const token = getLocalStorageKey('token');
     

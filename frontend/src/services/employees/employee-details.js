@@ -2,7 +2,7 @@ import { fetchUrl } from "../../utils/fetchUrl";
 import { getLocalStorageKey } from "../../utils/localStorage";
 
 export const getEmployeeDetails = async ()=>{
-    const url = 'http://localhost:5000' + '/api/v1/employees/employeeDetails';
+    const url = 'https://employeemanagementsystem-dg3q.onrender.com' + '/api/v1/employees/employeeDetails';
     const token = getLocalStorageKey('token');
     const headers = new Headers();
     headers.append('Content-Type', 'application/json');
@@ -12,7 +12,7 @@ export const getEmployeeDetails = async ()=>{
 }
 
 export const getEmployeeDetailsById = async (id)=>{
-    const url = 'http://localhost:5000' + '/api/v1/employees/employeeDetails';
+    const url = 'https://employeemanagementsystem-dg3q.onrender.com' + '/api/v1/employees/employeeDetails';
     const token = getLocalStorageKey('token');
     const headers = new Headers();
     headers.append('Content-Type', 'application/json');
@@ -23,7 +23,7 @@ export const getEmployeeDetailsById = async (id)=>{
 }
 
 export const updateEmployeeDetails = async (id, details) => {
-    const url = 'http://localhost:5000' + '/api/v1/employees/updateEmployee';
+    const url = 'https://employeemanagementsystem-dg3q.onrender.com' + '/api/v1/employees/updateEmployee';
     const token = getLocalStorageKey('token');
     const headers = new Headers();
     headers.append('Content-Type', 'application/json');
@@ -37,7 +37,7 @@ export const updateEmployeeDetails = async (id, details) => {
 }
 
 export const deleteEmployee = async (id) => {
-    const url = 'http://localhost:5000' + '/api/v1/employees/deleteEmployee';
+    const url = 'https://employeemanagementsystem-dg3q.onrender.com' + '/api/v1/employees/deleteEmployee';
     const token = getLocalStorageKey('token');
     const headers = new Headers();
     headers.append('Content-Type', 'application/json');

@@ -1,7 +1,7 @@
 import { fetchUrl } from "../../utils/fetchUrl";
 
 export const resetPassword = async (email, otp, password) =>{
-    const url = 'http://localhost:5000' + '/api/v1/employees/resetPassword';
+    const url = 'https://employeemanagementsystem-dg3q.onrender.com' + '/api/v1/employees/resetPassword';
     const headers = new Headers();
     headers.append('Content-Type', 'application/json');
     const body = { email, otp, newPassword: password };
